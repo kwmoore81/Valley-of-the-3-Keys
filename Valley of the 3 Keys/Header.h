@@ -3,6 +3,8 @@ int getNumValid(int min, int max);
 
 void mainGame();
 
+void randRoom();
+
 void printFile();
 
 void writeFile();
@@ -15,33 +17,43 @@ void backStory();
 
 void printTxt();
 
-void wlkforw();
+void wlkforw(int &a, int &b, int &c);
 
-void wlkbac();
+void wlkbac(int &a, int &b, int &c);
+
+void caveMenu(int &a);
+
+void caveList(int &a);
+
+void empty();
+
+void usePot();
 
 class Player
 {
-	int health = 100;
-	int damage = 30;
+public:
+	int health;
+	int damage;
 };
-class Bear
+class Enemy
 {
-	int health = 90;
-	int damage = 20;
+public:
+	int health;
+	int damage;
 };
-class Wolf
+class Key
 {
-	int health = 60;
-	int damage = 10;
-};
-class Bat
-{
-	int health = 30;
-	int damage = 5;
+public:
+	bool haveKey = false;
 };
 
-Bat blkBat();
-Wolf gryWolf();
-Bear BrnBear();
-Player Adv();
+Player Adv = { 100 , 30 };
+//Enemy Bear = { 90, 20 };
+//Enemy Wolf = { 60 , 10 };
+//Enemy Bat = { 30 , 5};
+//Key Hotdog;
+//Key Dino;
+//Key Tim;
+
+
 
