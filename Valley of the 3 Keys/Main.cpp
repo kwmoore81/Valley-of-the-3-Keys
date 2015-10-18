@@ -10,9 +10,27 @@
 
 
 
+//Player Adv;
+//Enemy Bear;
+//Enemy Wolf;
+//Enemy Bat;
+
+
 int main()
 
 {
+	Adv.health = 100;
+	//Adv.damage = 30;
+	Bear.health = 90;
+	//Bear.damage = 20;
+	Wolf.health = 60;
+	//Wolf.damage = 10;
+	Bat.health = 30;
+	//Bat.damage = 5;
+	Hotdog.haveKey = false;
+	Dino.haveKey = false;
+	Tim.haveKey = false;
+
 	//Changes the console window size. Credit: Kevin Hunter
 	HWND console = GetConsoleWindow();
 	RECT r;
@@ -42,46 +60,4 @@ int main()
 
 	}
 
-}
-void printFile()
-{
-
-
-	std::fstream fin;
-	fin.open("MyLog.txt", std::ios_base::out | std::ios_base::in);
-	char input[128];
-	while (fin.getline(input, 128))
-	{
-		std::cout << input << std::endl;
-
-		system("pause");
-		fin.close();
-	}
-}
-
-void writeFile()
-{
-	std::fstream fout;
-	fout.open("MyLog.txt", std::ios_base::out | std::ios_base::app);
-	char input[128];
-
-	if (fout.is_open())
-	{
-		std::cin.getline(input, 128);	// accepts user input and puts it into a buffer
-		fout << input << std::endl;	// write to the file
-		fout.flush();	// flush the write buffer, writing everything we haven't
-		fout.close();	// close the file stream
-
-	}
-}
-
-void clearFile()
-{
-	std::fstream file;
-	file.open("MyLog.txt", std::ios_base::out);
-	if (file.is_open())
-	{
-
-	}
-	file.close();
 }

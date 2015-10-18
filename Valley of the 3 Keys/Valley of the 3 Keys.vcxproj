@@ -122,7 +122,6 @@
     <ClInclude Include="Header.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\String-Test\string.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>

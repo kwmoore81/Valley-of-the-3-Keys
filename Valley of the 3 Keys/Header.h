@@ -1,15 +1,11 @@
 #pragma once
 int getNumValid(int min, int max);
 
+int main();
+
 void mainGame();
 
 void randRoom();
-
-void printFile();
-
-void writeFile();
-
-void clearFile();
 
 void splScr();
 
@@ -21,13 +17,36 @@ void wlkforw(int &a, int &b, int &c);
 
 void wlkbac(int &a, int &b, int &c);
 
-void caveMenu(int &a);
+void caveMenu(int &a, int &b);
 
-void caveList(int &a);
+void caveList(int &a, int &b);
 
 void empty();
 
-void usePot();
+void usePot(int &a);
+
+void wolfCave();
+
+void batCave();
+
+void bearCave();
+
+void hotCave();
+
+void dinoCave();
+
+void timCave();
+
+void getKey(class Key);
+
+void potionCave(int &b);
+
+void doorCave();
+
+void otherSide();
+
+void battle(class Enemy , class Player);
+
 
 class Player
 {
@@ -48,12 +67,11 @@ public:
 };
 
 Player Adv = { 100 , 30 };
-//Enemy Bear = { 90, 20 };
-//Enemy Wolf = { 60 , 10 };
-//Enemy Bat = { 30 , 5};
-//Key Hotdog;
-//Key Dino;
-//Key Tim;
-
+Enemy Bear = { 90, 20 };
+Enemy Wolf = { 60 , 10 };
+Enemy Bat = { 30 , 5 };
+Key Hotdog;
+Key Dino;
+Key Tim;
 
 
