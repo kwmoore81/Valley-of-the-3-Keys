@@ -1,0 +1,32 @@
+Kevin Moore - Valley of the 3 Keys
+
+The Pregame phase.
+
+	This project started in quite an overwhelming way. The first task at hand, writing a string library that seemed like this 
+unscalable wall that left me baffled as to where to even start. However, as I worked on it, it helped me find and overcome one of my biggest 
+weaknesses, being far to proud and independent. Nothing felt like defeat more than having to ask for help, but this project required it. 
+Thankfully my desire to do well on the project helped me overcome this and ask questions. Once I started this, the answers to the string 
+library started to flow. Step one complete.
+
+The Game Coding phase.
+
+	While coding the string library, it gave me plenty of time to think about what I wanted my game to be like. I knew that I didn't
+just want to copy someone else's idea. This time I wanted to make something that was mine. So I fleshed out the story, and got to typing.
+I once again had a lot of grand ideas for this game, but because I was so stubborn while working on the string library, my time was limited.
+It almost felt like I was working in a "crunch". Really made me feel like I had a deadline to meet, and some features had to be left out
+because of it. For instance, I would have liked to made a much more robust battle system. Also a true random functionality for the cave 
+system. So I feel like even my lack of time taught me something.
+
+Looking back.
+
+	Working on this project I saw many ups and down. When things went wrong, it felt completely overwhelming. At first I didn't realize
+that everyone else was in the same boat I was. I thought I just wasn't getting it. For someone who dragged his wife and 2 kids half 
+way across the county, and lived in a tent for 2 weeks just to attend this school. That's a pretty devastating feeling. I still haven't
+gotten the hang of not comparing myself to other students in the class. However, when things went right, it was quite an amazing feeling.
+
+	While working on the game code in my very limited free time, I ran into a bug that caused the game to not be able to compile. I knew
+that I couldn't waste my time with the bug at that moment because I had so much else to code. So for 4 days, I coded blind. I just had to
+stop second guessing myself and code what I thought was right. This allowed me to get more work done in the limited time I had. Thankfully, 
+almost all the blind code I wrote worked just as intended! This was the best I've felt about my own ability since I started this class.
+
+Out of all the things that I got from this project, more confidence in my own abilities is by far the greatest of all.

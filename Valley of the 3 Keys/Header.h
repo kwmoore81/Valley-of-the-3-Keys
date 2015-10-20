@@ -1,15 +1,13 @@
 #pragma once
 int getNumValid(int min, int max);
 
-int main();
-
 void mainGame();
-
-void randRoom();
 
 void splScr();
 
 void backStory();
+
+void credits();
 
 void printTxt();
 
@@ -20,6 +18,8 @@ void wlkbac(int &a, int &b, int &c);
 void caveMenu(int &a, int &b);
 
 void caveList(int &a, int &b);
+
+void status(int p);
 
 void empty();
 
@@ -45,7 +45,7 @@ void doorCave();
 
 void otherSide();
 
-void battle(class Enemy , class Player);
+void battle(class Enemy E, class Player &Adv);
 
 
 class Player
@@ -66,12 +66,6 @@ public:
 	bool haveKey = false;
 };
 
-Player Adv = { 100 , 30 };
-Enemy Bear = { 90, 20 };
-Enemy Wolf = { 60 , 10 };
-Enemy Bat = { 30 , 5 };
-Key Hotdog;
-Key Dino;
-Key Tim;
+
 
 
