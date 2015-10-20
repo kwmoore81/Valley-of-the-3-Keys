@@ -11,6 +11,12 @@ void credits();
 
 void printTxt();
 
+void printFile();
+
+void clearFile();
+
+void writeFile();
+
 void wlkforw(int &a, int &b, int &c);
 
 void wlkbac(int &a, int &b, int &c);

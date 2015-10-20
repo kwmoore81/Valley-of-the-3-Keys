@@ -97,6 +97,9 @@ void printTxt()
 
 void mainGame()
 {
+	std::cout << "Please give your adventurer a name." << std::endl;
+	writeFile();
+
 	Adv.health = 100;
 	Bear.health = 90;
 	Wolf.health = 60;
@@ -204,7 +207,7 @@ void mainGame()
 	void empty()
 	{
 
-		std::cout << "You don't find anything of interest in this cave " << std::endl;
+		std::cout << "You don't find anything of interest in this cave." << std::endl;
 
 		system("pause");
 		system("cls");
@@ -215,7 +218,7 @@ void mainGame()
 	{
 		while (Adv.health == 100)
 		{
-			std::cout << "You are already at full health" << std::endl;
+			std::cout << "You are already at full health." << std::endl;
 			system("pause");
 			system("cls");
 			break;
@@ -248,9 +251,9 @@ void mainGame()
 		while (E.health > 0 || Adv.health > 0)
 		{
 			Adv.health -= E.damage;
-			std::cout << "The enemy hit you for " << E.damage << "damage" << std::endl;
+			std::cout << "The enemy hit you for " << E.damage << "damage." << std::endl;
 			E.health -= Adv.damage;
-			std::cout << "You hit the enemy for " << Adv.damage << "damage" << std::endl;
+			std::cout << "You hit the enemy for " << Adv.damage << "damage." << std::endl;
 
 
 			if (E.health <= 0 || Adv.health <= 0) { break; }
@@ -311,7 +314,7 @@ void mainGame()
 
 		else
 		{
-			std::cout << "All you can see the shredded carcuss of the bat you took down." << std::endl;
+			std::cout << "All you can see is the shredded carcuss of the bat you took down." << std::endl;
 			system("pause");
 			system("cls");
 		}
@@ -321,7 +324,7 @@ void mainGame()
 	{
 		if (bearAlive == true)
 		{
-			std::cout << "Oh no! You have gotten to close to a mother bear's cub!" << std::endl;
+			std::cout << "Oh no! You've gotten to close to a mother bear's cub!" << std::endl;
 			system("pause");
 			system("cls");
 			battle(Bear, Adv);
@@ -346,7 +349,7 @@ void mainGame()
 			system("pause"); system("cls");
 			std::cout << "Shaped like a Hotdog.... \n  The inscription reads 'From Terry to you.'" << std::endl;
 			system("pause"); system("cls");
-			std::cout << "You arn't sure what that means but this must be a magic key! \n you swiftly pack it in your bag" << std::endl;
+			std::cout << "You arn't sure what that means, but this must be a magic key! \n You swiftly pack it in your bag" << std::endl;
 			system("pause");
 			system("cls");
 
@@ -390,7 +393,7 @@ void mainGame()
 
 				std::cout << "The T-Rex shaped key speaks to you in a growling voice. \n 'Only those who have proven their might may win me and take me to the Door that does not Belong.'" << std::endl;
 				system("pause");
-				std::cout << "As you reach for the key, out of no where the key opens it's jewel encrusted \n mouth and bites your hand!" << std::endl;
+				std::cout << "As you reach for the key, out of nowhere the key opens it's jewel encrusted \n mouth and bites your hand!" << std::endl;
 				system("pause");
 				std::cout << "You take 5 Damage..." << std::endl;
 
@@ -415,11 +418,11 @@ void mainGame()
 	{
 		if (Tim.haveKey == false)
 		{
-			std::cout << "You look around and in the corner you find a chest... a child's toy chest." << std::endl;
+			std::cout << "You look around, and in the corner you find a chest... A child's toy chest." << std::endl;
 			system("pause"); system("cls");
 			std::cout << "You use your trusty lockpick and open the lid slowly, \nand at the very bottom the the chest is a small key in the shape of an alpaca." << std::endl;
 			system("pause"); system("cls");
-			std::cout << "As you bring the key into the light you noticed the name 'Tim' \n etched on the side in what can only be crayon." << std::endl;
+			std::cout << "As you bring the key into the light, you noticed the name 'Tim' \n etched on the side in what can only be crayon." << std::endl;
 			system("pause"); system("cls");
 			std::cout << "You carfully place the key in your bag. \n One step closer to your goal!" << std::endl;
 			system("pause"); system("cls");
@@ -451,9 +454,10 @@ void mainGame()
 		system("pause"); system("cls");
 		std::cout << "However, in the center of this cave.. Attached to nothing, and standing freely, is a door" << std::endl;
 		system("pause"); system("cls");
-		std::cout << "This door looks like any other door you've seen in your life, but it seems \n to lead to no where. \n Just free standing in the center of the room." << std::endl;
+		std::cout << "This door looks like any other door you've seen in your life, but it seems \n to lead to nowhere. \n Just free standing in the center of the room." << std::endl;
 		system("pause"); system("cls");
-		std::cout << "The only real unusual thing about this ordinary door is the three keyholes under the knob" << std::endl;
+		std::cout << "The only real unusual thing about this ordinary door is the three keyholes under the knob." << std::endl;
+		system("pause"); system("cls");
 
 		if (Hotdog.haveKey == true && Dino.haveKey == true && Tim.haveKey == true)
 		{
@@ -462,13 +466,15 @@ void mainGame()
 			std::cout << "The door slowly creaks open..." << std::endl;
 			system("pause"); system("cls");
 
-			std::cout << "A bright light beams from the open door. You sheild your eyes and walk though." << std::endl;
+			std::cout << "A bright light beams from the open door. You shield your eyes and walk though." << std::endl;
 			system("pause"); system("cls");
-			std::cout << "As your eyes get used to the light I find that you're standing in front of a \n desk with a monitor and keyboard." << std::endl;
+			std::cout << "As your eyes get used to the light, you find that you're standing in front of a\ndesk with a monitor and keyboard." << std::endl;
 			system("pause"); system("cls");
-			std::cout << "The words on the screen say, 'Now it's time to tell your story.' \n below that is a single line that reads: \n\n#include <string> \n" << std::endl;
+			std::cout << "The words on the screen say, 'Now it's time to tell your story', "; printFile(); 
+			system("cls");
+			std::cout <<"\n Below that is a single line that reads: \n\n#include <string> \n" << std::endl;
 			system("pause"); system("cls");
-			std::cout << "you sit down at the desk and this is what you write... " << std::endl;
+			std::cout << "You sit down at the desk and this is what you write... " << std::endl;
 			system("pause");
 			system("cls");
 			
@@ -570,4 +576,47 @@ void mainGame()
 		else if (a == 19) { timCave(); }
 		else if (a == 20) { empty(); }
 
+	}
+
+	void printFile()
+	{
+
+
+		std::fstream fin;
+		fin.open("MyLog.txt", std::ios_base::out | std::ios_base::in);
+		char input[128];
+		while (fin.getline(input, 128))
+		{
+			std::cout << input << std::endl;
+
+			system("pause");
+			fin.close();
+		}
+	}
+
+	void writeFile()
+	{
+		std::fstream fout;
+		fout.open("MyLog.txt", std::ios_base::out | std::ios_base::app);
+		char input[128];
+
+		if (fout.is_open())
+		{
+			std::cin.getline(input, 128);	// accepts user input and puts it into a buffer
+			fout << input << std::endl;	// write to the file
+			fout.flush();	// flush the write buffer, writing everything we haven't
+			fout.close();	// close the file stream
+
+		}
+	}
+
+	void clearFile()
+	{
+		std::fstream file;
+		file.open("MyLog.txt", std::ios_base::out);
+		if (file.is_open())
+		{
+
+		}
+		file.close();
 	}

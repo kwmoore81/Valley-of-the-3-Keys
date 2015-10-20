@@ -31,7 +31,7 @@ int main()
 		std::cout << "Main Menu" << std::endl;
 		std::cout << std::endl;
 		std::cout << "1. Play Game" << std::endl;
-		std::cout << "2 .Back Story" << std::endl;
+		std::cout << "2. Back Story" << std::endl;
 		std::cout << "3. Back to Title Screen" << std::endl;
 		std::cout << "4. Credits" << std::endl;
 		std::cout << "5. Exit Game" << std::endl;
